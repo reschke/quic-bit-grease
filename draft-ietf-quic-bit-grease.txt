@@ -4,8 +4,8 @@
 
 quic                                                          M. Thomson
 Internet-Draft                                                   Mozilla
-Intended status: Standards Track                            8 April 2022
-Expires: 10 October 2022
+Intended status: Standards Track                           29 April 2022
+Expires: 31 October 2022
 
 
                          Greasing the QUIC Bit
@@ -45,7 +45,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 10 October 2022.
+   This Internet-Draft will expire on 31 October 2022.
 
 Copyright Notice
 
@@ -84,11 +84,11 @@ Table of Contents
 
    The second-to-most significant bit of the first byte in every QUIC
    packet is defined as having a fixed value in QUIC version 1 [QUIC].
-   The purpose of having a fixed value is to allow intermediaries and
-   endpoints to efficiently distinguish between QUIC and other
-   protocols; see [DEMUX] for a description of a scheme that QUIC can
-   integrate with as a result.  As this bit effectively identifies a
-   packet as QUIC, it is sometimes referred to as the "QUIC Bit".
+   The purpose of having a fixed value is to allow QUIC to be
+   efficiently distinguished from other protocols; see [DEMUX] for a
+   description of a system that might use this property.  As this bit
+   can identify a packet as QUIC, it is sometimes referred to as the
+   "QUIC Bit".
 
    Where endpoints and the intermediaries that support them do not
    depend on the QUIC Bit having a fixed value, sending the same value
